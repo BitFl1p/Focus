@@ -1,0 +1,29 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Docs\\Desktop\\Focus\\focus\\focus.csproj": {}
+  },
+  "projects": {
+    "D:\\Docs\\Desktop\\Focus\\focus\\focus.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Docs\\Desktop\\Focus\\focus\\focus.csproj",
+        "projectPath": "D:\\Docs\\Desktop\\Focus\\focus\\focus.csproj",
+        "packagesPath": "C:\\Users\\Lumbr\\.nuget\\packages\\",
+        "outputPath": "D:\\Docs\\Desktop\\Focus\\focus\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Lumbr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Docs\\Downloads": {}
+        }
+      }
+    }
+  }
+}

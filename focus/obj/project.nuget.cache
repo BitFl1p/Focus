@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "4Q4PMmjySS+1CaX607zOqbTTUWlQL86FPBWmeOZBrY9tFSAuQuEYI0ybMz9+UMLOfT2PAtBOeMD7D+0y8wUxAA==",
+  "success": false,
+  "projectFilePath": "D:\\Docs\\Desktop\\Focus\\focus\\focus.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1105",
+      "level": "Error",
+      "message": "Unable to read project information for 'focus': 'VERSION_NUMBER' is not a valid version string."
+    }
+  ]
+}
