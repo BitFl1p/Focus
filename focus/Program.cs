@@ -18,12 +18,12 @@ namespace focus
             {
                 switch (arg)
                 {
-                    case "-help":
-                        WriteLine(" -help        brings up this menu");
-                        WriteLine(" -del         deletes your save file(this file includes all paths for the programs you set to appear in focus mode)");
+                    case "--help":
+                        WriteLine(" --help        brings up this menu");
+                        WriteLine(" --del         deletes your save file(this file includes all paths for the programs you set to appear in focus mode)");
                         WriteLine(" arguments can be used together for each of their separate effects");
                         break;
-                    case "-del":
+                    case "--del":
                         DelSave("FocusedPaths");
                         break;
                 }
@@ -36,6 +36,7 @@ namespace focus
                 MakeFocusedSave("FocusedPaths");
                 focusedSH = CheckSave("FocusedPaths");
             }
+            ClearDesktop();
             foreach(string sh in focusedSH)
             {
                 string name = Path.GetFileName(sh);
@@ -62,7 +63,6 @@ namespace focus
                 {
                     "Path for Unity Hub: ",
                     "Path for Blender: ",
-                    "Path for Blockbench: ",
                     "Path for Google Chrome: "
                 };
                 foreach (string question in questions)
@@ -72,6 +72,12 @@ namespace focus
                 }
                 sw.Close();
             }
+        }
+        static void ClearDesktop()
+        {
+            string[] filePaths = Directory.GetFiles(Environment.GetFolderPath(Environment.SpecialFolder.Desktop));
+            foreach (string filePath in filePaths)
+                System.IO.File.Delete(filePath);
         }
         static void MakeUnfocusedSave(string saveName)
         {
@@ -106,7 +112,6 @@ namespace focus
             string shortcutLocation = Path.Combine(shortcutPath, shortcutName + ".lnk");
             WshShell shell = new WshShell();
             IWshShortcut shortcut = (IWshShortcut)shell.CreateShortcut(shortcutLocation);
-            virtual
             shortcut.Description = "My shortcut description";   // The description of the shortcut
             shortcut.IconLocation = targetFileLocation;// The icon of the shortcut
             shortcut.TargetPath = targetFileLocation;                 // The path of the file that will launch when the shortcut is run

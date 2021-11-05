@@ -17,12 +17,4 @@
     </COMReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.NETCore.Platforms" Version="5.0.4" />
-    <PackageReference Include="Microsoft.Win32.SystemEvents" Version="5.0.0" />
-    <PackageReference Include="System.Drawing.Common" Version="5.0.2" /><PackageReference Include="System.Drawing.Common" Version="5.0.2" />
-    <PackageReference Include="SixLabors.ImageSharp" Version="VERSION_NUMBER" />
-
-  </ItemGroup>
-
 </Project>
